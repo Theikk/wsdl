@@ -1,0 +1,193 @@
+<?xml version='1.0' encoding='UTF-8'?><wsdl:definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://casemanagement.webservices.casem.fujitsu.fi/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:ns4="http://schemas.xmlsoap.org/soap/http" xmlns:ns1="http://casem.fujitsu.fi/ws/" name="CasemServiceService" targetNamespace="http://casemanagement.webservices.casem.fujitsu.fi/">
+  <wsdl:import location="https://tiedonhallintapalvelutesti.tiera.fi:9443/casem-cmis-ws/casem?wsdl=CasemServicePort.wsdl" namespace="http://casem.fujitsu.fi/ws/">
+    </wsdl:import>
+  <wsdl:binding name="CasemServiceServiceSoapBinding" type="ns1:CasemServicePort">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="runReport">
+      <soap:operation soapAction="runReport" style="document"/>
+      <wsdl:input name="runReport">
+        <soap:body use="literal"/>
+
+      </wsdl:input>
+      <wsdl:output name="runReportResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="CasemException">
+        <soap:fault name="CasemException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="connect">
+      <soap:operation soapAction="connect" style="document"/>
+      <wsdl:input name="connect">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="connectResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="CasemException">
+        <soap:fault name="CasemException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="requestPwdChange">
+      <soap:operation soapAction="requestPwdChange" style="document"/>
+      <wsdl:input name="requestPwdChange">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="requestPwdChangeResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="CasemException">
+        <soap:fault name="CasemException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="endTransaction">
+      <soap:operation soapAction="endTransaction" style="document"/>
+      <wsdl:input name="endTransaction">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="endTransactionResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="CasemException">
+        <soap:fault name="CasemException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="isTransactionActive">
+      <soap:operation soapAction="isTransactionActive" style="document"/>
+      <wsdl:input name="isTransactionActive">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="isTransactionActiveResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="CasemException">
+        <soap:fault name="CasemException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getPermissionLevel">
+      <soap:operation soapAction="getPermissionLevel" style="document"/>
+      <wsdl:input name="getPermissionLevel">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getPermissionLevelResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="CasemException">
+        <soap:fault name="CasemException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="hasPermission">
+      <soap:operation soapAction="hasPermission" style="document"/>
+      <wsdl:input name="hasPermission">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="hasPermissionResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="CasemException">
+        <soap:fault name="CasemException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="writeLog">
+      <soap:operation soapAction="writeLog" style="document"/>
+      <wsdl:input name="writeLog">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="writeLogResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="CasemException">
+        <soap:fault name="CasemException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="createLoginTicket">
+      <soap:operation soapAction="createLoginTicket" style="document"/>
+      <wsdl:input name="createLoginTicket">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="createLoginTicketResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="CasemException">
+        <soap:fault name="CasemException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="changePassword">
+      <soap:operation soapAction="changePassword" style="document"/>
+      <wsdl:input name="changePassword">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="changePasswordResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="CasemException">
+        <soap:fault name="CasemException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="startTransaction">
+      <soap:operation soapAction="startTransaction" style="document"/>
+      <wsdl:input name="startTransaction">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="startTransactionResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="CasemException">
+        <soap:fault name="CasemException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getAsyncOpStatus">
+      <soap:operation soapAction="getAsyncOpStatus" style="document"/>
+      <wsdl:input name="getAsyncOpStatus">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getAsyncOpStatusResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="CasemException">
+        <soap:fault name="CasemException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="disconnect">
+      <soap:operation soapAction="disconnect" style="document"/>
+      <wsdl:input name="disconnect">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="disconnectResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="CasemException">
+        <soap:fault name="CasemException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="updateDocumentProperties">
+      <soap:operation soapAction="updateDocumentProperties" style="document"/>
+      <wsdl:input name="updateDocumentProperties">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="updateDocumentPropertiesResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="CasemException">
+        <soap:fault name="CasemException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="verifySignature">
+      <soap:operation soapAction="verifySignature" style="document"/>
+      <wsdl:input name="verifySignature">
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="verifySignatureResponse">
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="CasemException">
+        <soap:fault name="CasemException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="CasemServiceService">
+    <wsdl:port binding="tns:CasemServiceServiceSoapBinding" name="CasemServicePort">
+      <soap:address location="https://tiedonhallintapalvelutesti.tiera.fi:9443/casem-cmis-ws/casem"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
